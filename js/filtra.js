@@ -13,7 +13,7 @@ compoFiltro.addEventListener("input", function(){
 		var paciente = pacientes[i];
 		var tdNome = paciente.querySelector(".info-nome");
 		var nome = tdNome.textContent;
-        var expressao = new RegExp(this.value,"i");
+        var expressao = new RegExp(this.value,"i"); //expressão regular//
 		if (!expressao.test(nome)) {
 			paciente.classList.add("invisivel");
 		} else {
